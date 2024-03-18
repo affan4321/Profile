@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+      integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Muhammad_Affan</title>
+
+    <!-- CSS Styling-->
+    <style>
+    body{
+        background-color: #bed6eb;
+    }
+    #background-video{
+        position: fixed;
+        z-index: -1;
+    }
+    #name img{
+        transition: 2s linear;
+        transform: rotate(360deg);
+    }
+
+    
+    .mainbody #scrollspyHeading2{
+        padding: 20px 0px 162px 0px;
+        font-size: 30px;
+        width: 100%;
+    }
+    #scrollspyHeading2 h3,
+    #scrollspyHeading3 h3{
+        text-decoration: underline;
+        text-align: center;
+        padding-top: 70px;
+        color: #fff;
+    }
+    .header #name:hover{
+        text-decoration: coral solid underline;
+        cursor: pointer;
+        color: rgb(rgb(194, 36, 36), green, blue) !important;
+    }
+    .mainbody #scrollspyHeading3{
+        padding: 162px 0px 162px 0px;
+        font-size: 30px;
+        background-color: #fff;
+        width: 100%;
+    }
+    .mainbody #scrollspyHeading4{
+        padding: 162px 0px 162px 0px;
+        font-size: 30px;
+        background-color: #747485;
+        width: 100%;
+    }
+    #scrollspyHeading3 p:hover{
+        background-color: chocolate;
+    }
+    #scrollspyHeading4 .col-6:hover{
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 777px){
+        #scrollspyHeading3 p{
+            font-size: 20px;
+            margin-top: -50px;
+        }
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <video id="background-video" autoplay loop muted poster="Profile/Muhammad Affan.png">
+        <source src="blurredVid.mp4" type="video/mp4">
+    </video>
+    <div class="container" style="width: 100%">
+      <div class="row header" style="width: 100%">
+        <nav
+          id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3"
+          data-bs-theme="dark"
+          style="position: static;"
+        >
+          <div class="col-lg-4" id="name" style="padding: 0px 0px 0px 18px">
+            <a class="navbar-brand" href="#"><img src="webdevimg4.png" alt="webdevimg4" width="100px" height="100px"> Muhammad Affan</a>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="navbar navbar-expand-lg" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+                <a class="nav-link" href="#scrollspyHeading2">About</a>
+                <a class="nav-link" href="#scrollspyHeading3">Facilities</a>
+                <a class="nav-link" href="#scrollspyHeading4">Pricing</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="looking for something?"
+                aria-label="Search"
+                style="
+                  padding: 0px 30px 0px 36px;
+                  font-size: 15px;
+                  text-align: center;
+                "
+              />
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                style="margin: 0px 18px 0px 0px"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="mainbody">
+            <div class="row" id="scrollspyHeading2">
+                <video id="background-video2" autoplay loop muted poster="Profile/Muhammad Affan.png">
+                    <source src="Profile/Muhammad Affan.mp4" type="video/mp4">
+                </video>
+                <h1 style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #fff;">About</h1>
+                <h3>Basic Intro:</h3>
+                <p style="text-align: center; color: #fff;">My name is Muhammad Affan and I am a student at FAST Islamabad doing BSCS <br>I have love for programming and I want to persue my career as a Web developer perticularly in MERN Stack, WEB 3.0 and Blockchain. <br>With the advancement of AI and new Tech, I stay updated and learn something new each day. <br> </p>
+                <h3>Education:</h3>
+                <p style="text-align: center; margin-bottom: 300px; color: #fff;">I did my <span style="text-decoration: underline;">O-Levels</span> from American Lycetuff Lahore and my <span style="text-decoration: underline;">A-Levels</span> from KIMS Lahore</p>
+            </div>
+            <div class="row" id="scrollspyHeading3">
+                <div class="col-5">
+                    <h1 style="position: relative; left: 100%; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Facilities</h1>
+                    <h3>Free Consultation:</h3>
+                    <img src="webdevimg2.png" alt="webdevimg2" style="width: 100%;"/>
+                    <h3>Website building:</h3>
+                    <img src="webdevimg4.png" alt="webdevimg4" style="width: 100%;">
+                </div>
+                <div class="col-7">
+                    <p class="fade-in-left" style="position: relative; top: 25%;">I will offer you basic and advance consultation to clear out your doubts in mind so your imagination can come to reality.</p>
+                    <p class="fade-in-left" style="position: relative; top: 60%;">Basic Level or Advanced Level, depends on you how you like your website to be, I will make it for you!</p>
+                </div>
+            </div>
+            <div class="row" id="scrollspyHeading4">
+                <div class="col-12">
+                    <h1 style="text-align: center;  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #fff;">Pricing</h1>
+                </div>
+                <div class="col-6">
+                    <img src="webdevimg.png" alt="" style="width: 100%;" class="pkg1">
+                    <h2>Basic Package</h2>
+                    <h5>HTML, CSS, Basic JavaScript</h5>
+                    <label for="">$1999</label>
+                </div>
+                <div class="col-6">
+                    <img src="webdevimg3.png" alt="" style="width: 100%;" class="pkg2">
+                    <h2>Premium Package</h2>
+                    <h5>HTML, CSS, JavaScript, JQuery, Animation</h5>
+                    <label for="">$4999</label>
+                </div>
+                <div class="col-12" style="position: relative; bottom: -180px;">
+                    <p style="font-size: 20px; margin: 15 auto">Copyright © Muhammad Affan 2023.      Careers Terms & Conditions Apply     Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
